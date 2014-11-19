@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018963F41A1D4C1B00D8FE56 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 018963F11A1D4BF400D8FE56 /* libCorePlot-CocoaTouch.a */; };
+		018963F61A1D4CC100D8FE56 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018963F51A1D4CC100D8FE56 /* QuartzCore.framework */; };
+		018963F81A1D4CCE00D8FE56 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018963F71A1D4CCE00D8FE56 /* Accelerate.framework */; };
 		01A032151A1CDF8F00771E4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A032141A1CDF8F00771E4F /* main.m */; };
 		01A032181A1CDF8F00771E4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A032171A1CDF8F00771E4F /* AppDelegate.m */; };
 		01A0321B1A1CDF8F00771E4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A0321A1A1CDF8F00771E4F /* ViewController.m */; };
@@ -14,13 +17,24 @@
 		01A032201A1CDF8F00771E4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A0321F1A1CDF8F00771E4F /* Images.xcassets */; };
 		01A032231A1CDF8F00771E4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A032211A1CDF8F00771E4F /* LaunchScreen.xib */; };
 		01A0322F1A1CDF8F00771E4F /* AccelerometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A0322E1A1CDF8F00771E4F /* AccelerometerTests.m */; };
-		01A0327F1A1CE00800771E4F /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A0327A1A1CE00800771E4F /* BEMCircle.m */; };
-		01A032801A1CE00800771E4F /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A0327C1A1CE00800771E4F /* BEMLine.m */; };
-		01A032811A1CE00800771E4F /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A0327E1A1CE00800771E4F /* BEMSimpleLineGraphView.m */; };
 		01A032831A1CE31900771E4F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A032821A1CE31900771E4F /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		018963F01A1D4BF400D8FE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 018963EA1A1D4BF400D8FE56 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		018963F21A1D4BFF00D8FE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 018963EA1A1D4BF400D8FE56 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9B83460FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
 		01A032291A1CDF8F00771E4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 01A032071A1CDF8F00771E4F /* Project object */;
@@ -31,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		018963EA1A1D4BF400D8FE56 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "core-plot/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		018963F51A1D4CC100D8FE56 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		018963F71A1D4CCE00D8FE56 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		01A0320F1A1CDF8F00771E4F /* Accelerometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accelerometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A032131A1CDF8F00771E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01A032141A1CDF8F00771E4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,12 +61,6 @@
 		01A032281A1CDF8F00771E4F /* AccelerometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelerometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A0322D1A1CDF8F00771E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01A0322E1A1CDF8F00771E4F /* AccelerometerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccelerometerTests.m; sourceTree = "<group>"; };
-		01A032791A1CE00800771E4F /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
-		01A0327A1A1CE00800771E4F /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
-		01A0327B1A1CE00800771E4F /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
-		01A0327C1A1CE00800771E4F /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
-		01A0327D1A1CE00800771E4F /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
-		01A0327E1A1CE00800771E4F /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
 		01A032821A1CE31900771E4F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -58,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018963F81A1D4CCE00D8FE56 /* Accelerate.framework in Frameworks */,
+				018963F61A1D4CC100D8FE56 /* QuartzCore.framework in Frameworks */,
+				018963F41A1D4C1B00D8FE56 /* libCorePlot-CocoaTouch.a in Frameworks */,
 				01A032831A1CE31900771E4F /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,9 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		018963EB1A1D4BF400D8FE56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				018963F11A1D4BF400D8FE56 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		01A032061A1CDF8F00771E4F = {
 			isa = PBXGroup;
 			children = (
+				018963F71A1D4CCE00D8FE56 /* Accelerate.framework */,
+				018963F51A1D4CC100D8FE56 /* QuartzCore.framework */,
 				01A032821A1CE31900771E4F /* CoreBluetooth.framework */,
 				01A032111A1CDF8F00771E4F /* Accelerometer */,
 				01A0322B1A1CDF8F00771E4F /* AccelerometerTests */,
@@ -94,7 +118,7 @@
 		01A032111A1CDF8F00771E4F /* Accelerometer */ = {
 			isa = PBXGroup;
 			children = (
-				01A032781A1CE00800771E4F /* Graph */,
+				018963EA1A1D4BF400D8FE56 /* CorePlot-CocoaTouch.xcodeproj */,
 				01A032161A1CDF8F00771E4F /* AppDelegate.h */,
 				01A032171A1CDF8F00771E4F /* AppDelegate.m */,
 				01A032191A1CDF8F00771E4F /* ViewController.h */,
@@ -133,20 +157,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		01A032781A1CE00800771E4F /* Graph */ = {
-			isa = PBXGroup;
-			children = (
-				01A032791A1CE00800771E4F /* BEMCircle.h */,
-				01A0327A1A1CE00800771E4F /* BEMCircle.m */,
-				01A0327B1A1CE00800771E4F /* BEMLine.h */,
-				01A0327C1A1CE00800771E4F /* BEMLine.m */,
-				01A0327D1A1CE00800771E4F /* BEMSimpleLineGraphView.h */,
-				01A0327E1A1CE00800771E4F /* BEMSimpleLineGraphView.m */,
-			);
-			name = Graph;
-			path = BEMSimpleLineGraph/Classes;
-			sourceTree = SOURCE_ROOT;
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +171,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				018963F31A1D4BFF00D8FE56 /* PBXTargetDependency */,
 			);
 			name = Accelerometer;
 			productName = Accelerometer;
@@ -214,6 +225,12 @@
 			mainGroup = 01A032061A1CDF8F00771E4F;
 			productRefGroup = 01A032101A1CDF8F00771E4F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 018963EB1A1D4BF400D8FE56 /* Products */;
+					ProjectRef = 018963EA1A1D4BF400D8FE56 /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				01A0320E1A1CDF8F00771E4F /* Accelerometer */,
@@ -221,6 +238,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		018963F11A1D4BF400D8FE56 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = 018963F01A1D4BF400D8FE56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		01A0320D1A1CDF8F00771E4F /* Resources */ = {
@@ -247,9 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01A032801A1CE00800771E4F /* BEMLine.m in Sources */,
-				01A0327F1A1CE00800771E4F /* BEMCircle.m in Sources */,
-				01A032811A1CE00800771E4F /* BEMSimpleLineGraphView.m in Sources */,
 				01A0321B1A1CDF8F00771E4F /* ViewController.m in Sources */,
 				01A032181A1CDF8F00771E4F /* AppDelegate.m in Sources */,
 				01A032151A1CDF8F00771E4F /* main.m in Sources */,
@@ -267,6 +291,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		018963F31A1D4BFF00D8FE56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = 018963F21A1D4BFF00D8FE56 /* PBXContainerItemProxy */;
+		};
 		01A0322A1A1CDF8F00771E4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 01A0320E1A1CDF8F00771E4F /* Accelerometer */;
@@ -375,20 +404,26 @@
 		01A032331A1CDF8F00771E4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Accelerometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/core-plot/framework/**";
 			};
 			name = Debug;
 		};
 		01A032341A1CDF8F00771E4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Accelerometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/core-plot/framework/**";
 			};
 			name = Release;
 		};

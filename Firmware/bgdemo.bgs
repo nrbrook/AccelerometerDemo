@@ -27,7 +27,7 @@ event system_boot(major ,minor ,patch ,build ,ll_version ,protocol_version ,hw )
 	call hardware_io_port_write(acc_port,acc_cs,acc_cs)
 	
 #start timer at 1second interval, repeating
-	call hardware_set_soft_timer(10000,0,0)
+	call hardware_set_soft_timer(3277,0,0)
 end
 
 event hardware_soft_timer(handle)

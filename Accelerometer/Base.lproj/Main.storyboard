@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUm-ph-3wq" customClass="BEMSimpleLineGraphView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUm-ph-3wq" customClass="CPTGraphHostingView">
                                 <rect key="frame" x="16" y="20" width="568" height="144"/>
                                 <color key="backgroundColor" red="0.050980392159999999" green="0.3803921569" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -31,7 +31,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLc-cP-w5Q" customClass="BEMSimpleLineGraphView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLc-cP-w5Q" customClass="CPTGraphHostingView">
                                 <rect key="frame" x="16" y="213" width="568" height="145"/>
                                 <color key="backgroundColor" red="0.050980392159999999" green="0.3803921569" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -63,7 +63,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOB-UP-FSE" customClass="BEMSimpleLineGraphView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOB-UP-FSE" customClass="CPTGraphHostingView">
                                 <rect key="frame" x="16" y="407" width="568" height="144"/>
                                 <color key="backgroundColor" red="0.050980392159999999" green="0.3803921569" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
