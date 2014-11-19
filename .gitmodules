@@ -1,0 +1,3 @@
+[submodule "BEMSimpleLineGraph"]
+	path = BEMSimpleLineGraph
+	url = git@github.com:Boris-Em/BEMSimpleLineGraph.git

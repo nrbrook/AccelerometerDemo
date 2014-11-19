@@ -1,0 +1,43 @@
+#
+# Accelerometer demo for ADXL350
+#
+
+dim tmp(10)
+dim spiresult
+dim channel
+dim tlen
+
+const acc_cs   = $4 # accelerometer pin is P1_2
+const acc_port = $1 # accelerometer port is P1
+const p1_out   = $3 # pins P1_0 and P1_1 must be set output, can't be left floating
+
+const acc_addr = $3a # address for acceleromete
+
+event system_boot(major ,minor ,patch ,build ,ll_version ,protocol_version ,hw )
+#set to advertising mode
+	call gap_set_mode(gap_general_discoverable,gap_undirected_connectable)
+#config spi&accelerometer	
+	call hardware_io_port_write(acc_port,acc_cs,0) # pull chip select down
+	call hardware_io_port_config_direction(acc_port,acc_cs|p1_out) #set pins out, also set p1_0 and p1_1 out
+	call hardware_spi_transfer(0,2,"\x2d\x08")#enable measurement mode
+	call hardware_io_port_write(acc_port,acc_cs,acc_cs) # pull chip select up
+	
+	call hardware_io_port_write(acc_port,acc_cs,0) # pull chip select down
+	call hardware_spi_transfer(0,2,"\x31\x0d")#enable measurement mode
+	call hardware_io_port_write(acc_port,acc_cs,acc_cs)
+	
+#start timer at 1second interval, repeating
+	call hardware_set_soft_timer(10000,0,0)
+end
+
+event hardware_soft_timer(handle)
+	call hardware_io_port_write(acc_port,acc_cs,0) 
+	call hardware_spi_transfer(0,7,"\xf2\x00\x00\x00\x00\x00\x00")(spiresult,channel,tlen,tmp(0:tlen))
+	call hardware_io_port_write(acc_port,acc_cs,acc_cs)	
+	call attributes_write(acc_value,0,6,tmp(1:6))
+end
+
+event connection_disconnected(handle,result)
+#connection disconnected, continue advertising
+    call gap_set_mode(gap_general_discoverable,gap_undirected_connectable)
+end

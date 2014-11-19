@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUm-ph-3wq" customClass="BEMSimpleLineGraphView">
+                                <rect key="frame" x="16" y="20" width="568" height="144"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.3803921569" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="8Sw-4B-PSS"/>
+                                    <constraint firstAttribute="width" constant="233" id="Ta5-R1-0nQ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Sw-4B-PSS"/>
+                                        <exclude reference="Ta5-R1-0nQ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLc-cP-w5Q" customClass="BEMSimpleLineGraphView">
+                                <rect key="frame" x="16" y="213" width="568" height="145"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.3803921569" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="HDJ-Aw-Qvr"/>
+                                    <constraint firstAttribute="width" constant="233" id="wEd-KT-Hu8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HDJ-Aw-Qvr"/>
+                                        <exclude reference="wEd-KT-Hu8"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUb-x5-lM9">
+                                <rect key="frame" x="296" y="172" width="9" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZc-3e-8p1">
+                                <rect key="frame" x="296" y="366" width="9" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhW-Q4-Err">
+                                <rect key="frame" x="296" y="559" width="9" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOB-UP-FSE" customClass="BEMSimpleLineGraphView">
+                                <rect key="frame" x="16" y="407" width="568" height="144"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.3803921569" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="233" id="ZkN-lN-7zY"/>
+                                    <constraint firstAttribute="height" constant="158" id="nFe-Ul-mYY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZkN-lN-7zY"/>
+                                        <exclude reference="nFe-Ul-mYY"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="oUm-ph-3wq" secondAttribute="trailing" id="0qR-7X-efZ"/>
+                            <constraint firstItem="rhW-Q4-Err" firstAttribute="centerX" secondItem="xOB-UP-FSE" secondAttribute="centerX" id="17D-pM-ujO"/>
+                            <constraint firstItem="rhW-Q4-Err" firstAttribute="top" secondItem="xOB-UP-FSE" secondAttribute="bottom" constant="8" id="57b-qM-n7V"/>
+                            <constraint firstAttribute="centerX" secondItem="xOB-UP-FSE" secondAttribute="centerX" id="Cuu-M3-bcn"/>
+                            <constraint firstItem="PZc-3e-8p1" firstAttribute="centerX" secondItem="cLc-cP-w5Q" secondAttribute="centerX" id="IuA-Z4-7m5"/>
+                            <constraint firstItem="rhW-Q4-Err" firstAttribute="centerX" secondItem="xOB-UP-FSE" secondAttribute="centerX" id="LEY-cV-TM0"/>
+                            <constraint firstItem="oUm-ph-3wq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NBv-ah-gug"/>
+                            <constraint firstAttribute="centerX" secondItem="cLc-cP-w5Q" secondAttribute="centerX" id="PvE-VI-agI"/>
+                            <constraint firstItem="YUb-x5-lM9" firstAttribute="top" secondItem="oUm-ph-3wq" secondAttribute="bottom" constant="8" id="RAx-yN-llG"/>
+                            <constraint firstItem="cLc-cP-w5Q" firstAttribute="width" secondItem="xOB-UP-FSE" secondAttribute="width" id="RHZ-AL-p0f"/>
+                            <constraint firstItem="PZc-3e-8p1" firstAttribute="top" secondItem="cLc-cP-w5Q" secondAttribute="bottom" constant="8" id="T8p-xM-VzW"/>
+                            <constraint firstItem="xOB-UP-FSE" firstAttribute="top" secondItem="PZc-3e-8p1" secondAttribute="bottom" constant="20" id="UV8-wy-vG4"/>
+                            <constraint firstItem="cLc-cP-w5Q" firstAttribute="height" secondItem="xOB-UP-FSE" secondAttribute="height" id="VoP-Fx-HY8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rhW-Q4-Err" secondAttribute="bottom" constant="20" id="dDQ-f6-VHc"/>
+                            <constraint firstItem="cLc-cP-w5Q" firstAttribute="width" secondItem="oUm-ph-3wq" secondAttribute="width" id="hni-ll-vcW"/>
+                            <constraint firstItem="PZc-3e-8p1" firstAttribute="centerX" secondItem="cLc-cP-w5Q" secondAttribute="centerX" id="jgO-xE-vmZ"/>
+                            <constraint firstItem="oUm-ph-3wq" firstAttribute="centerX" secondItem="YUb-x5-lM9" secondAttribute="centerX" id="pvz-u8-rEj"/>
+                            <constraint firstItem="oUm-ph-3wq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rAt-mi-rZx"/>
+                            <constraint firstItem="cLc-cP-w5Q" firstAttribute="top" secondItem="YUb-x5-lM9" secondAttribute="bottom" constant="20" id="rRU-lh-86O"/>
+                            <constraint firstItem="cLc-cP-w5Q" firstAttribute="height" secondItem="oUm-ph-3wq" secondAttribute="height" id="zFD-dt-TBm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jgO-xE-vmZ"/>
+                                <exclude reference="LEY-cV-TM0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outletCollection property="graphs" destination="oUm-ph-3wq" id="rmi-t8-u1p"/>
+                        <outletCollection property="graphs" destination="cLc-cP-w5Q" id="cyp-4R-354"/>
+                        <outletCollection property="graphs" destination="xOB-UP-FSE" id="S0g-kA-w0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
