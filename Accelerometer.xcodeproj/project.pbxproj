@@ -10,6 +10,7 @@
 		018963F41A1D4C1B00D8FE56 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 018963F11A1D4BF400D8FE56 /* libCorePlot-CocoaTouch.a */; };
 		018963F61A1D4CC100D8FE56 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018963F51A1D4CC100D8FE56 /* QuartzCore.framework */; };
 		018963F81A1D4CCE00D8FE56 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018963F71A1D4CCE00D8FE56 /* Accelerate.framework */; };
+		018964081A1D635900D8FE56 /* BluetoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018964071A1D635900D8FE56 /* BluetoothController.m */; };
 		01A032151A1CDF8F00771E4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A032141A1CDF8F00771E4F /* main.m */; };
 		01A032181A1CDF8F00771E4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A032171A1CDF8F00771E4F /* AppDelegate.m */; };
 		01A0321B1A1CDF8F00771E4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A0321A1A1CDF8F00771E4F /* ViewController.m */; };
@@ -48,6 +49,8 @@
 		018963EA1A1D4BF400D8FE56 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "core-plot/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		018963F51A1D4CC100D8FE56 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		018963F71A1D4CCE00D8FE56 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		018964061A1D635900D8FE56 /* BluetoothController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothController.h; sourceTree = "<group>"; };
+		018964071A1D635900D8FE56 /* BluetoothController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothController.m; sourceTree = "<group>"; };
 		01A0320F1A1CDF8F00771E4F /* Accelerometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accelerometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A032131A1CDF8F00771E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01A032141A1CDF8F00771E4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				01A032171A1CDF8F00771E4F /* AppDelegate.m */,
 				01A032191A1CDF8F00771E4F /* ViewController.h */,
 				01A0321A1A1CDF8F00771E4F /* ViewController.m */,
+				018964061A1D635900D8FE56 /* BluetoothController.h */,
+				018964071A1D635900D8FE56 /* BluetoothController.m */,
 				01A0321C1A1CDF8F00771E4F /* Main.storyboard */,
 				01A0321F1A1CDF8F00771E4F /* Images.xcassets */,
 				01A032211A1CDF8F00771E4F /* LaunchScreen.xib */,
@@ -276,6 +281,7 @@
 			files = (
 				01A0321B1A1CDF8F00771E4F /* ViewController.m in Sources */,
 				01A032181A1CDF8F00771E4F /* AppDelegate.m in Sources */,
+				018964081A1D635900D8FE56 /* BluetoothController.m in Sources */,
 				01A032151A1CDF8F00771E4F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
