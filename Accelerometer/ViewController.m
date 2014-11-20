@@ -10,11 +10,11 @@
 #import "CorePlot-CocoaTouch.h"
 #import "BluetoothController.h"
 
-#define DATA_SCALE_FACTOR 0.00007
+#define DATA_SCALE_FACTOR 0.00022 
 
-static const double kFrameRate = 15.0;  // frames per second
+static const double kFrameRate = 10.0;  // frames per second
 
-static const NSUInteger kMaxDataPoints = 50;
+static const NSUInteger kMaxDataPoints = 100;
 static NSString *const kPlotIdentifier = @"Data Source Plot";
 
 @interface ViewController () <CPTPlotDataSource, BluetoothControllerDelegate>
@@ -184,7 +184,7 @@ static NSString *const kPlotIdentifier = @"Data Source Plot";
         // Plot space
         CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)graph.defaultPlotSpace;
         plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromUnsignedInteger(0) length:CPTDecimalFromUnsignedInteger(kMaxDataPoints - 2)];
-        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromInt(-2) length:CPTDecimalFromUnsignedInteger(4)];
+        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromInt(-4) length:CPTDecimalFromUnsignedInteger(8)];
     }
 }
 
